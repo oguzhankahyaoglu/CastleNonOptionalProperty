@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageProjectUrl>https://github.com/oguzhankahyaoglu/CastleNonOptionalProperty</PackageProjectUrl>
+    <Description>Ensuring property injection for CastleWindsor IoC container.</Description>
+    <PackageTags>castle windsor, property injection</PackageTags>
+    <PackageId>PropertyInjectionForCastleWindsor</PackageId>
+    <Authors>oguzhankahyaoglu</Authors>
+    <Product>PropertyInjectionForCastleWindsor</Product>
+    <Version>1.0.3</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Windsor" Version="4.1.1" />
+  </ItemGroup>
+
+</Project>
