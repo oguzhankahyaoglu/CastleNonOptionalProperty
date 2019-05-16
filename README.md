@@ -5,5 +5,13 @@ Using this NonOptional attribute on properties, we will ensure injection for the
 
 
         public IRepository<CalculationMaster, long> CalculationMasterRepository { get; set; }
-        [Mandatory] 
+        [NonOptional] 
         public IRepository<CalculationVaultDailyLiquid, long> CalculationVaultDailyLiquidRepository { get; set; }
+
+# Usage
+
+Depending on the technology (.netcore or .net framework), you should use the extension method like:
+        
+        IocContainer.EnforceNonOptionalProperties();
+        
+And that is it! Wherever you define NonOptional attribute on a public property, it will be a requirement to be injected automatically.
